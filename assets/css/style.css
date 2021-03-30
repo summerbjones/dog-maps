@@ -1,7 +1,16 @@
-body, html{
-  height: 100%;
-  margin-top: 0%;
+body{
+  background-color: rgb(238, 218, 192);
+  padding: 0%;
 }
+
+body, html, h1{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* the hero image*/
 .heroImg{
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
@@ -11,23 +20,106 @@ body, html{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin-top: 0;
-  
+  margin-top: 0%;
+  background-origin: content-box;
 }
+
 .heroTxt{
   text-align: center;
   position: relative;
   top: 20%;
   bottom: 50%;
-  color:  white;
+  color:rgb(219, 211, 211);
+  font-size: larger;
 }
 
-h1, p{
-  font-family: Arial, Helvetica, sans-serif;
-}
 .btn{
-  background-color: gray;
+  background-color: rgb(204, 197, 197);
   border: none;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
+/*flexbox start*/
+.container1{
+  display: flex;
+  align-items: flex-start;
+  
+}
+p, h1{
+  text-align: center;
+}
+.container1 div{
+border: 10px rgb(238, 218, 192) solid;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+overflow: hidden;
+
+}
+.box1{
+  flex:1;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url(../img/img3.jpg);
+  background-size: cover;
+  color:rgb(219, 211, 211);
+  background-color: burlywood;
+  
+}
+.box2{
+  flex: 1;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url(../img/img4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:rgb(219, 211, 211);
+}
+
+
+
+
+
+
+/*sections start*/
+  
+/*.infoExp{
+  background-image: url("../img/img3.jpg");
+  height:60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px 210px;
+  height: 40%;
+  width: 40%;
+  padding-top: 10px;
+
+}
+.section1, .section2, .section3, .section4, .section5{
+  text-align: center;
+  font-family: sans-serif;
+  
+}
+
+.infoTech{
+  background-image: url("https://phoenix.org/wp-content/uploads/2015/11/11792725_m.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px 200px;
+  height: 35%;
+  width: 40%;
+  margin-left: 1007px;
+  margin-top: -340px;
+}   
+  
+.section4, .section1{
+  text-align: center;
+  padding-top: 50%;
+  padding-left: 0%;
+}  
+ 
+section{
+    display: inline;
+  }  */
+  
+
+
